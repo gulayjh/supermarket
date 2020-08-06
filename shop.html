@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/shop.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/shop.js"></script>
+  <script src="./js/cart.js"></script>
+  
+  <title>Green Shop</title>
+</head>
+<body>
+  
+  
+
+  <!------------------------NAV------------------>
+ 
+	<header class="header-area overlay" >
+		<nav class="navbar navbar-expand-md navbar-dark">
+			<div class="container">
+				<a href="#" class="navbar-brand"><img src="./img/logo.png" style="width:60px;"></a>
+				
+				<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+					<span class="menu-icon-bar"></span>
+					<span class="menu-icon-bar"></span>
+					<span class="menu-icon-bar"></span>
+				</button>
+				
+				<div id="main-nav" class="collapse navbar-collapse">
+					<ul class="navbar-nav ml-auto">
+						<li><a href="./shop.html" class="nav-item nav-link active">Home</a></li>
+						<li><a href="about" class="nav-item nav-link">About Us</a></li>
+						<li class="dropdown">
+							<a href="#" class="nav-item nav-link" data-toggle="dropdown">Food</a>
+							<div class="dropdown-menu">
+								<a href="#dairy" class="dropdown-item">Dairy</a>
+								<a href="#drink" class="dropdown-item">Drink</a>
+								<a href="#snack" class="dropdown-item">Snacks</a>
+								<div class="dropdown-divider"></div>
+								<a href="#fruit" class="dropdown-item">Fruit</a>
+								<a href="#vegetable" class="dropdown-item">Vegetable</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="nav-item nav-link" data-toggle="dropdown">Household</a>
+							<div class="dropdown-menu">
+								<a href="#cleaning" class="dropdown-item">Cleaning</a>
+								<a href="#decoration" class="dropdown-item">Decoration</a>
+								
+							</div>
+						</li>
+						<li>
+							<a class="btn btn-success" data-toggle="modal" data-target="#cart">Cart (<span class="total-count" id="cart_count">0</span>)</a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="banner">
+			<div class="container" id="welcome">
+				
+			</div>
+		</div>
+	</header>
+
+<!------------------------------------------------------CAROUSEL------------------------------------------------------>
+<!-------------------------DAIRY------------------------->
+<h2 class="carousel-head" id="dairy">Dairy</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			
+			<div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel1" data-slide-to="1"></li>
+				
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<input type="hidden" value="0" id="price_input" />
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dairy1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Milk</h4>
+									<p class="item-price">$9.00 </p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('9.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dairy2.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Egg</h4>
+									<p class="item-price"><span>$3.99</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('3.99');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dairy3.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Cheese</h4>
+									<p class="item-price"> <span>$19.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('19.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dairy4.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Cheese</h4>
+									<p class="item-price"><span>$25.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('25.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dairy5.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Oatmeal</h4>
+									<p class="item-price"><span>$12.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('12.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dairy6.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Cereal</h4>
+									<p class="item-price"><span>$10.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('10.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dairy7.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Cheese</h4>
+									<p class="item-price"><span>$29.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('29.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dairy8.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Olive Oil</h4>
+									<p class="item-price"><span>$46.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('46.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+				
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel1" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel1" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+<!-------------------------DRINKS------------------------->
+<h2 class="carousel-head" id="drink">Drinks</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			
+			<div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel2" data-slide-to="1"></li>
+				
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/drink1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Coca Cola</h4>
+									<p class="item-price"> <span>$3.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('3.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/drink2.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Fanta</h4>
+									<p class="item-price"><span>$2.99</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('2.99');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/drink3.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Sandora Fruitz</h4>
+									<p class="item-price"> <span>$5.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('5.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/drink4.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Pepsi</h4>
+									<p class="item-price"><span>$3.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('3.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/drink5.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Fruit Juice</h4>
+									<p class="item-price"><span>$7.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('7.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/drink6.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Fruit Juice</h4>
+									<p class="item-price"><span>$12.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('12.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/drink7.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Coca Cola Zero</h4>
+									<p class="item-price"><span>$9.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('9.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/drink8.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Sprite</h4>
+									<p class="item-price"><span>$6.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('6.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+				
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel2" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel2" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+<!-------------------------SNACKS------------------------->
+<h2 class="carousel-head" id="snack">Snakcs</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel3" data-slide-to="1"></li>
+				
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/snack1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Candy</h4>
+									<p class="item-price"> <span>$29.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('29.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/snack2.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Pringles</h4>
+									<p class="item-price"><span>$23.99</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('23.99');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/snack3.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Cheetos</h4>
+									<p class="item-price"> <span>$19.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('19.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/snack4.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lays</h4>
+									<p class="item-price"><span>$25.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('25.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/snack5.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Oreo</h4>
+									<p class="item-price"><span>$12.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('12.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/snack6.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Bepps</h4>
+									<p class="item-price"><span>$15.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('15.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/snack7.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Popcorn</h4>
+									<p class="item-price"><span>$5.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('5.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/snack8.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Gummy Bears</h4>
+									<p class="item-price"><span>$9.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('9.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+				
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel3" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel3" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+<!-------------------------FRUIT------------------------->
+<h2 class="carousel-head" id="fruit">Fruits</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			
+			<div id="myCarousel4" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel4" data-slide-to="1"></li>
+				
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/fruit1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Strawberry</h4>
+									<p class="item-price"> <span>$9.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('9.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/fruit2.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Pineapple</h4>
+									<p class="item-price"><span>$27.99</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('27.99');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/fruit3.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Banana</h4>
+									<p class="item-price"> <span>$14.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('14.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/fruit4.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Cherry</h4>
+									<p class="item-price"><span>$25.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('25.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/fruit5.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Watermelon</h4>
+									<p class="item-price"><span>$6.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('6.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/fruit6.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Blueberry</h4>
+									<p class="item-price"><span>$19.00</span></p>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div><a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('19.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/fruit7.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Avocado</h4>
+									<p class="item-price"><span>$15.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('15.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/fruit8.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Apple</h4>
+									<p class="item-price"><span>$5.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('5.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+				
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel4" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel4" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+<!-------------------------VEGETABLE------------------------->
+<h2 class="carousel-head" id="vegetable">Vegetables</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			
+			<div id="myCarousel5" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel5" data-slide-to="1"></li>
+				
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/veg1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Tomato</h4>
+									<p class="item-price"> <span>$7.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('7.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/veg2.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Potato</h4>
+									<p class="item-price"><span>$3.99</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('3.99');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/veg3.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Artichoke</h4>
+									<p class="item-price"> <span>$14.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('14.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/veg4.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Cabbage</h4>
+									<p class="item-price"><span>$2.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('2.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/veg5.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Cucumber</h4>
+									<p class="item-price"><span>$6.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('6.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/veg6.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Pepper</h4>
+									<p class="item-price"><span>$8.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('8.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/veg7.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Garlic</h4>
+									<p class="item-price"><span>$12.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('12.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/veg8.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Carrot</h4>
+									<p class="item-price"><span>$5.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('5.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+				
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel5" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel5" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+<!-------------------------CLEANING------------------------->
+<h2 class="carousel-head" id="cleaning">Cleaning</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			
+			<div id="myCarousel6" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel6" data-slide-to="1"></li>
+				
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/cleaning1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Glass Cleaner</h4>
+									<p class="item-price"> <span>$36.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('36.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/cleaning2.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Daily Wash</h4>
+									<p class="item-price"><span>$23.99</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('23.99');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/cleaning3.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Hand Soap</h4>
+									<p class="item-price"> <span>$69.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('69.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/cleaning4.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Detergent</h4>
+									<p class="item-price"><span>$25.00</span></p>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div><a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('25.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/cleaning5.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Snuggle</h4>
+									<p class="item-price"><span>$26.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('26.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/cleaning6.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Harpic</h4>
+									<p class="item-price"><span>$81.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('81.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/cleaning7.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>UAU</h4>
+									<p class="item-price"><span>$39.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('39.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/cleaning8.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Tide</h4>
+									<p class="item-price"><span>$56.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('56.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+				
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel6" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel6" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+<!-------------------------DECORATION------------------------->
+<h2 class="carousel-head" id="decoration">Decoration</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			
+			<div id="myCarousel7" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel7" data-slide-to="1"></li>
+				
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dec1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Plant</h4>
+									<p class="item-price"> <span>$39.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('39.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dec2.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Decor</h4>
+									<p class="item-price"><span>$43.99</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('43.99');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dec3.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Decor</h4>
+									<p class="item-price"> <span>$49.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('49.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dec4.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Frame</h4>
+									<p class="item-price"><span>$50.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('50.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dec5.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Frame</h4>
+									<p class="item-price"><span>$79.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('79.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dec6.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Frame</h4>
+									<p class="item-price"><span>$87.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('87.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dec7.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Frame</h4>
+									<p class="item-price"><span>$99.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('99.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/dec8.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Gardrobe</h4>
+									<p class="item-price"><span>$100.00</span></p>
+									<a href="#" class="add-to-cart btn btn-primary" onclick="javascript:setValue('100.00');" data-toggle="modal" data-target="#cart">Add to Cart</a>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+				
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel7" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel7" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!--------------------------------------MODAL-------------------------------------->
+ 
+ <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		 
+			<form>
+				<input type="button" class="value-button" id="decrease" onclick="javascript:decreaseValue();calculate();" value="-"></input>
+				<input type="number" id="number" value="0" min="0" />
+				<input type="button" class="value-button" id="increase" onclick="javascript:increaseValue();calculate();" value="+"></inp>
+			  </form>
+		      <h5 id="price"></h5>
+		</div>
+		<div class="modal-footer">
+		  
+		  <button type="button" onclick="javascript:addtocart();" data-dismiss="modal" class="btn btn-primary">Order now</button>
+		</div>
+	  </div>
+	</div>
+  </div> 
+  
+
+<!---------------------------FOOTER--------------------------->
+  <!-- Site footer -->
+  <footer class="site-footer">
+	<div class="container">
+	  <div class="row">
+		<div class="col-xs-6 col-md-4">
+		  <h6>Contact Us</h6>
+		  <ul class="footer-links">
+			<li>Phone: +994 959 56 45</li>
+			<li>Phone: +994 959 56 44</li>
+			<li>E-mail: shopshop@gmail.com</li>
+
+		  </ul>
+		</div>
+		<div class="col-xs-6 col-md-4">
+			<h6>Address</h6>
+			<ul class="footer-links">
+			  <li>1234 Street Name
+				City, AA 99999</li>
+			  <li>1234 Street Name
+				City, AA 99999</li>
+			  
+  
+			</ul>
+		  </div>
+      
+	  <div class="col-xs-6 col-md-4">
+		<h6>Maps</h6>
+		<ul class="footer-links" > 
+            <li style="display: inline;">
+				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalRegular">Regular map modal</button>
+			</li>
+			<li style="display: inline;">
+				<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#modalRegular">Satellite map modal</button>
+			</li>
+			
+		  
+		  </ul>
+		  
+		  <!--Modal:Regular Name-->
+		  <div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+		  
+			  <!--Content-->
+			  <div class="modal-content">
+		  
+				<!--Body-->
+				<div class="modal-body mb-0 p-0">
+		  
+				  <!--Google map-->
+				  <div id="map-container-google-16" class="z-depth-1-half map-container-9" style="height: 400px">
+					<iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+					  frameborder="0" style="border:0" allowfullscreen></iframe>
+				  </div>
+		  
+				</div>
+		  
+				<!--Footer-->
+				<div class="modal-footer justify-content-center">
+		  
+				  <button type="button" class="btn btn-info btn-md">Save location <i class="fas fa-map-marker-alt ml-1"></i></button>
+				  <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
+		  
+				</div>
+		  
+			  </div>
+			  <!--/.Content-->
+		  
+			</div>
+		  </div>
+		 
+		  
+		  <!--Modal:Satellite Name-->
+		  <div class="modal fade" id="modalSatellite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+		  
+			  <!--Content-->
+			  <div class="modal-content">
+		  
+				<!--Body-->
+				<div class="modal-body mb-0 p-0">
+		  
+				  <!--Google map-->
+				  <div id="map-container-google-17" class="z-depth-1-half map-container-10" style="height: 400px">
+					<iframe src="https://maps.google.com/maps?q=new%20york&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+					  frameborder="0" style="border:0" allowfullscreen></iframe>
+				  </div>
+		  
+				</div>
+		  
+				<!--Footer-->
+				<div class="modal-footer justify-content-center">
+		  
+				  <button type="button" class="btn btn-default btn-md" >Save location <i class="fas fa-map-marker-alt ml-1"></i></button>
+				  <button type="button" class="btn btn-outline-default btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
+		  
+				</div>
+		  
+			  </div>
+			  <!--/.Content-->
+		  
+			</div>
+		  </div>
+		  
+		  
+		  		
+	  </div>
+	  <hr>
+	</div>
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-8 col-sm-6 col-xs-12">
+		  <p class="copyright-text">Copyright &copy; 2020 
+		  </p>
+		</div>
+
+		<div class="col-md-4 col-sm-6 col-xs-12">
+		  <ul class="social-icons">
+			<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>  
+			<li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>   
+		  </ul>
+		</div>
+	  </div>
+	</div>
+</footer>
+</body>
+
+ <script src="js/active.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
